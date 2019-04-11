@@ -4,8 +4,14 @@ form.login {
 }
 
 body {
-  background:url('../assets/images/dumbbell.jpg') 
-  no-repeat center;
+  background:url('../assets/images/dumbbell.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  color: aliceblue;
 }
 
 h2 {
@@ -38,6 +44,25 @@ h4 {
   font-size: 18px;
 }
 
+.jumbotron {
+  background: none;
+  border: none;
+}
+
+#jumbotext {
+  font-family: 'Anton', sans-serif;
+  color: aliceblue;
+  display: block;
+}
+
+#jumbotag {
+  width: 100%;
+  font-family: 'Anton', sans-serif;
+  color: aliceblue;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+}
 
 .btn {
   background: rgb(100, 165, 249);
@@ -56,8 +81,8 @@ h4 {
 label {
   color: whitesmoke;
   font-family: 'Anton', sans-serif;
-  font-size: 16px;
-  margin-left: 5%;
+  font-size: 20px;
+  /* margin-left: 5%; */
 }
 
 p {
