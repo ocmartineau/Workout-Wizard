@@ -2,20 +2,20 @@ var orm = require("../config/orm.js");
 
 var user = {
   selectWhere: function(cols, vals, cb) {
-    orm.selectWhere("userInfo", cols, vals, function(err, rows) {
+    orm.selectWhere("UserInfo", cols, vals, function(err, rows) {
       cb(err, rows);
     });
   },
   // The variables cols and vals are arrays.
   create: function(cols, cb) {
-    orm.create("userInfo", cols, function(err, rows) {
+    orm.create("UserInfo", cols, function(err, rows) {
       console.log("rows");
       console.log(rows);
       cb(err, rows);
     });
   },
   update: function(cols, condition, cb) {
-    orm.update("userInfo", cols, condition, function(res) {
+    orm.update("UserInfo", cols, condition, function(res) {
       cb(res);
     });
   },
